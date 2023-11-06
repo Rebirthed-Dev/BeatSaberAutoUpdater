@@ -19,3 +19,10 @@ Every 24 hours since the bot's launch, it will post a summary for the profile.
 The bot should have the "Send Messages" permission in the channel that it is being used in, otherwise errors may occur.
 
 The bot's database is stored in resources/data.db, and the database is using SQLite.
+
+# Missing Features
+These may be added when I have time.
+
+- Ability to remove a subscription
+- More accurate daily timing instead of a 24 hour timer
+- Improved API access to prevent bot crashing due to unexpected results.
