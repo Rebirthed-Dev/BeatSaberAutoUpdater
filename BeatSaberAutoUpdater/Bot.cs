@@ -58,7 +58,7 @@ namespace BeatSaberAutoUpdater
 
             Commands = Client.UseSlashCommands(Commands_Config);
 
-            Commands.RegisterCommands<BaseCommandsModule>(ConfigJson.TestGuildID);
+            Commands.RegisterCommands<BaseCommandsModule>();
 
             // Minutely check for new scores
             checkTimer = new Timer(60000);

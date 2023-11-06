@@ -12,17 +12,17 @@ namespace BeatSaberAutoUpdater
     {
         public SqliteDatabaseInterface SQLInterface { private get; set; }
 
-        [SlashCommand("HelloWorld", "Is it alive?????")]
+        [SlashCommand("HelloWorld", "Basic command to inquire if the bot is listening.")]
         public async Task Greetings_World(InteractionContext ctx)
         {
-            await ctx.CreateResponseAsync(InteractionResponseType.ChannelMessageWithSource, new DiscordInteractionResponseBuilder().WithContent("What's up"));
+            await ctx.CreateResponseAsync(InteractionResponseType.ChannelMessageWithSource, new DiscordInteractionResponseBuilder().WithContent("Hello World!"));
         }
 
-        [SlashCommand("NotifSub", "Begin notifications 4 ScoreSaber UserID.")]
+        [SlashCommand("NotifSub", "Begin notifications for a ScoreSaber UserID.")]
         public async Task Begin_Notifications(InteractionContext ctx, [Option("ScoresaberID", "The ID for your ScoreSaber profile.", false)] string Idstring)
         {
             long Id = Convert.ToInt64(Idstring);
-            if (ctx.Member.Id == 185056654956560384)
+            if (true) // ctx.Member.Id == 185056654956560384) - Leftover testing data. This can be reimplemented if command should only be used by one individual.
             {
                 var users = await SQLInterface.Get_Subscribed_UserIDs();
                 if (users.Contains(Id) == false)
