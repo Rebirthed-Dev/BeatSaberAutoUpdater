@@ -26,3 +26,4 @@ These may be added when I have time.
 - Ability to remove a subscription
 - More accurate daily timing instead of a 24 hour timer
 - Improved API access to prevent bot crashing due to unexpected results.
+- Further error catching and appropriate outputs.
