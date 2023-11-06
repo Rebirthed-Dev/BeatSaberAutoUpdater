@@ -18,5 +18,4 @@ Every 24 hours since the bot's launch, it will post a summary for the profile.
 
 The bot should have the "Send Messages" permission in the channel that it is being used in, otherwise errors may occur.
 
-The bot's database is stored in resources/data.db
-The database is using SQLite.
+The bot's database is stored in resources/data.db, and the database is using SQLite.
